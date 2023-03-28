@@ -1,0 +1,59 @@
+:root {
+  --nav-footer: #5f5d5d;
+  --nav-footer-text: #ffffff;
+  --primary-background: #146c94;
+  --secondary-background: #19a7ce;
+  --tertiary-background: #f6f1f1;
+  --hover: #f6f1f1;
+}
+
+.navbar {
+  background-color: var(--nav-footer);
+  height: 60px;
+  margin-bottom: 40px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.navbar a {
+  color: var(--nav-footer-text);
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.navbar nav ul li {
+  list-style-type: none;
+}
+
+.navbar nav ul li a {
+  padding: 10px;
+  margin: 0 10px;
+}
+
+.navbar a:hover {
+  color: var(--secondary-background);
+}
+
+/* Tablet size and lower */
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+  .navbar {
+    background-color: var(--primary-background);
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  .navbar nav {
+    padding: 10px;
+  }
+}
+
+/* mxdus */
